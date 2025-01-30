@@ -526,8 +526,8 @@ def get_image(filename):
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
 
-# if __name__ == "__main__":
-#     if not os.path.exists(app.config['UPLOAD_FOLDER']):
-#         os.makedirs(app.config['UPLOAD_FOLDER'])
+if __name__ == "__main__":
+    if not os.path.exists(app.config['UPLOAD_FOLDER']):
+        os.makedirs(app.config['UPLOAD_FOLDER'])
 
-#     app.run(debug=True)
+    app.run(debug=True)
