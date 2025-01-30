@@ -22,7 +22,7 @@ CORS(app)
 # app.config['MYSQL_DB'] = "mediminder457$mediminder_db"
 
 # Configure upload folder and allowed file types
-app.config['UPLOAD_FOLDER'] = '/home/mediminder457/mysite/uploads'
+app.config['UPLOAD_FOLDER'] = './uploads'
 
 mysql = mysql.connector.connect(host="mediminder457.mysql.pythonanywhere-services.com", user="mediminder457", password="mediMINDERmySQLdb!!", database="mediminder457$mediminder_db")
 
